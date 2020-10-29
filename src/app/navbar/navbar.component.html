@@ -1,0 +1,13 @@
+<mat-toolbar class="flex__container">
+  <div class="container__one">
+    <button mat-button>Főoldal</button>
+    <button mat-button [matMenuTriggerFor]="products">Termékek</button>
+    <mat-menu #products="matMenu">
+      <button mat-menu-item>Angular</button>
+      <button mat-menu-item>Material</button>
+    </mat-menu>
+  </div>
+  <div class="container__two">
+    <button mat-button>Bejelentkezés</button>
+  </div>
+</mat-toolbar>
